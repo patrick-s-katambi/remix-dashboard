@@ -14,7 +14,7 @@ export type TNavButtonItems = TNavButton[];
 const DashboardSidebar: React.FunctionComponent<{ sidebarMenus: TNavButtonItems }> = ({
     sidebarMenus,
 }) => (
-    <aside className="relative h-screen w-[300px] cursor-pointer py-4 bg-[whitesmoke] border-r border-r-gray-100 overflow-y-auto flex flex-col items-center gap-4">
+    <aside className="relative h-screen w-[250px] cursor-pointer py-4 bg-[whitesmoke] border-r border-r-gray-100 overflow-y-auto flex flex-col items-center gap-4">
         <SidebarLogo />
 
         <div className="w-full flex flex-col gap-2 max-h-[75vh] overflow-y-auto px-2">
