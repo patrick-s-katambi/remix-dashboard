@@ -5,7 +5,7 @@ import { TNavButtonItems } from "~/components/dashboard/sidebar";
 const useDashboard = (): { sidebarMenus: TNavButtonItems } => {
     return {
         sidebarMenus: [
-            { Icon: <FiHome />, label: "Pokemon", routePath: "pokemon" },
+            { Icon: <FiHome />, label: "Pokemon", routePath: "." },
             { Icon: <FiHome />, label: "Home", routePath: "home" },
             { Icon: <HiOutlineSquare3Stack3D />, label: "Projects", routePath: "projects" },
             { Icon: <FiSettings />, label: "Settings", routePath: "settings" },

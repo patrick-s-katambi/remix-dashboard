@@ -5,10 +5,12 @@ import { TNavButton } from "./sidebar";
 const NavButton: React.FunctionComponent<TNavButton> = (props) => (
     <NavLink
         to={props.routePath}
-        className={({ isActive }) =>
-            `${
-                isActive ? "bg-gray-200 font-medium" : ""
-            } flex items-center gap-4 justify-between group hover:bg-gray-200 p-2 rounded-lg`
+        end
+        className={({ isActive, isPending }) =>
+            `
+            ${isActive ? "bg-gray-200 font-medium" : ""}
+            ${isPending ? "text-gray-400" : ""}
+            flex items-center gap-4 justify-between group hover:bg-gray-200 p-2 rounded-lg`
         }
     >
         <div className="flex items-center gap-2">
