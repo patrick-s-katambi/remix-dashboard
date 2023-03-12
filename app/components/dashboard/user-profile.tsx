@@ -16,8 +16,12 @@ const UserProfile: React.FunctionComponent<IUserProfile> = (props) => (
                 />
             </div>
             <div className="flex flex-col gap-0">
-                <p className="text-sm font-semibold">{props.username}</p>
-                <p className="text-xs text-green-600">{props.email}</p>
+                <p className="text-sm font-semibold cursor-pointer hover:underline transition-all w-fit">
+                    {props.username}
+                </p>
+                <p className="text-xs text-green-600 cursor-pointer hover:underline transition-all w-fit">
+                    {props.email}
+                </p>
             </div>
         </div>
         <div className="bg-gray-100 w-[30px] rounded-lg flex items-center justify-center">
