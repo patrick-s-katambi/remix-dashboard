@@ -1,5 +1,5 @@
 import { json, LoaderFunction } from "@remix-run/node";
-import { useLoaderData } from "@remix-run/react";
+import { useLoaderData, useTransition } from "@remix-run/react";
 import { Typography } from "antd";
 import axios from "axios";
 import { motion, Variants } from "framer-motion";
